@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.mean_bg{
+    background-color: #138ecc;
+    max-width: 100vw;
+    height: 100vh;
+}
+.navber{
+    z-index: 100000;
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.navber ul {
+    margin-left: 50px;
+    position: relative;
+}
+.navber ul li{
+    padding: 5px 30px 8px 30px;
+    display: inline-block;
+    position: relative;
+    margin: 10px 5px;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 6px;
+    transition: all .5s;
+    list-style: none;
+}
+.navber ul li:hover{
+    background-color: rgb(5, 21, 49);
+}
+
+.navber ul li:hover ul li{
+    background: none;
+}
+.navber ul li a{
+    font-family: 'Akaya Telivigala', cursive;
+    color: crimson;
+    text-decoration: none;
+    transition: all .3s;
+
+}
+
+.navber ul li:hover a{
+    color: #fff;
+}
+.navber ul li:hover ul li a{
+    color: #000609;
+}
+.navber ul ul {
+    top: 100px;
+    width: 140px;
+    position: absolute;
+    left: 0px;
+    background-color: #fff;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    
+}
+.navber ul li:hover > ul{
+    visibility: visible;
+    opacity: 1;
+    top: 40px;
+}
+.navber ul ul li{
+    list-style: none;
+    display: list-item;
+    padding: 5px 45px 8px 35px;
+    box-shadow: none;
+}
+.navber ul ul li a{
+    font-family: 'Akaya Telivigala', cursive;
+    box-shadow: none;
+    color: #000609;
+    transition: all .4s;
+}
+.navber ul ul li a:hover{
+    color: crimson !important;
+}
+
+
+.navber ul ul ul {
+    top: 100px;
+    width: 140px;
+    position: absolute;
+    left: 135px;
+    background-color: #fff;
+    margin: 0;
+    z-index: 1000;
+    
+}
+.navber ul ul ul li{
+    list-style: none;
+    
+}
+.navber ul ul li:hover > ul {
+    top: 0;
+    
+}
+.makeby{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+.makeby img{
+    width: 400px;
+}
+/* make by Ruhul Amin */
